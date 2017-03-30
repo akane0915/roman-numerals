@@ -13,7 +13,7 @@ var inputTooBig = function(userInput) {
 // Function for one digit input to return the corresponding roman numeral
 var inputOneDigit = function(inputArray){
   for(i = 0; i <= romans1to9.length; i++){
-    if(inputArray[0] === i.toString()){
+    if(inputArray[inputArray.length - 1] === i.toString()){
       return romans1to9[i - 1];
     }
   }
@@ -22,8 +22,8 @@ var inputOneDigit = function(inputArray){
 // Function for two digit input to return the corresponding roman numeral
 var inputTwoDigit = function(inputArray){
   for(i = 0; i <= romansTensPlace.length; i++){
-    if(inputArray[0] === i.toString()){
-      return romansTensPlace[i - 1];
+    if(inputArray[inputArray.length - 2] === i.toString()){
+      return romansTensPlace[i - 1] + inputOneDigit(inputArray);
     }
   }
 };
