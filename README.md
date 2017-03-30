@@ -1,7 +1,7 @@
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
 
-Numbers 1-99:
+| Numbers 1-99:|||
 | The program will not take any input larger than 3,999 | 4000 | Invalid Input |
 | The program will return the following roman numerals given these inputs: I = 1; V = 5; X = 10;  L = 50; C = 100; D = 500; M = 1000| 10 | X |
 |If the user inputs 2, the program will return II | 2 | II |
@@ -12,7 +12,7 @@ Numbers 1-99:
 |If user input is two digits, apply the same spec above for the first digit being 3 - 9 | 31 | XXX |
 |If user input is two digits, identify the last digit and follow the rule above to add the correct roman number to the existing array | 21 | XXI |
 
-Numbers 100-999:
+|Numbers 100-999:|||
 
 
-Numbers 1000-3999:
+|Numbers 1000-3999:|||
